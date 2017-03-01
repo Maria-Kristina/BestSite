@@ -1,0 +1,339 @@
+<!doctype html>
+<html class="no-js" lang="">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		
+		<link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+		<link href='https://fonts.googleapis.com/css?family=Amatic+SC:700' rel='stylesheet' type='text/css'>
+		
+		<title>Best Site</title>
+		
+		
+	</head>
+	
+	<body>
+		<header class="header-background">
+			<div class="header-content">
+				<div class="top-left">
+					<img src="img/Logomakr_1hfTWf.png" height="60px">
+				</div>
+				
+				<div class="top-right">
+					<nav class="nav-center">
+					
+						<!----------Yläpalkin shitit kun näyttö on iso------------>
+						<ul class="nav-large">
+							<li><a href="#"><h3>Categories</h3></a></li>
+							<li><a href="#"><h3>Statistics</h3></a></li>
+							<li id="upload"><h3>Upload</h3></li>
+							<li class="dropdown"><a href="#"><h3>Sort by</h3></a>
+								<div class="dropdown-content">
+									<p>New</p>
+									<p>Popular</p>
+									<p>Random</p>
+								</div>
+							</li>
+						</ul>					
+					</nav>
+					<!--------------Log in ja sing up buttonit------------->
+					<nav class="nav-right">
+						<ul class="buttons">
+							<!--<li id="nappula"><h3>Sign up</h3></li>-->
+							<li id="loginbutton"><h3>Log in</h3></li>
+						</ul>
+						
+						<!-------------Yläpalkin shitit kun näyttö on pieni------------>
+						<div  class="mobile-menu"> <!--HAMBURGER BUTTON-->
+							<img id="mobilemenu" src="img/mobile-menu-button.png">
+							<div id="mobilemenucontent" class="mobile-menu-content">
+								<ul>
+									<li id ="loginbutton1"><h3>Log in</h3></li>
+									<li><a href="#"><h3>Categories</h3></a></li>
+									<li><a href="#"><h3>Statistics</h3></a></li>
+									<li><a href="#"><h3>Upload</h3></a></li>
+									<li id="sortby"><h3>Sort by</h3>
+										<div id="sortbyoptions">
+											<h3>New</h3>
+											<h3>Popular</h3>
+											<h3>Random</h3>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						
+					</nav>
+				</div>
+			</div>
+		</header>
+		
+		
+		<!----------Yläpalkin napeista painettaessa aukeavat shitit----------->
+		
+		<!---------Upload ruutu--------->
+		<div id="uploaddiv" class="modal">
+			<div id="uploadblock"class="modalcont">
+				<img id="closeupload" class="closebutton" src="img/close.png">
+				<form method="post">
+					<div class="wrap">
+						<div class ="rowblock">
+							<div class="block1">
+								<label>Username</label>
+							</div>
+							<div class="block2">
+								<input type="text">
+							</div>
+							<!--<div class="block3"></div>-->
+						</div>			
+						<div class ="rowblock">
+							<div class="block1">
+								<label>Password</label>
+							</div>
+							<div class="block2">
+								<input type="password">
+							</div>
+							<div class="block3">
+								<button class="logbutton" type="submit">
+								<span>Login</span></button>
+							</div>
+						</div>
+					</div>
+					<!--Tänne tulee upload shitit-->
+				</form>
+			</div>
+		</div>
+		
+		<!----------Log in ja sign up ruutu--------->
+		<div id="logindiv" class="modal">
+			<div id="loginblock" class="modalcont">
+				<img id="closelogin" class="closebutton" src="img/close.png">
+				<form id="loginform" method="post">
+					<div class="login">
+						<h2>Log in</h2>
+					</div>
+
+					<div class="wrap">
+						<div class ="rowblock">
+							<div class="block1">
+								<label>Username</label>
+							</div>
+							<div class="block2">
+								<input type="text">
+							</div>
+							<!--<div class="block3"></div>-->
+						</div>			
+						<div class ="rowblock">
+							<div class="block1">
+								<label>Password</label>
+							</div>
+							<div class="block2">
+								<input type="password">
+							</div>
+							<div class="block3">
+								<button class="logbutton" type="submit">
+								<span>Login</span></button>
+							</div>
+						</div>
+					</div>
+				</form>
+				<form id="signupform" method="post">
+					<div class="login">
+						<h2>Or sing up</h2>
+					</div>
+
+					<div class="wrap">
+						<div class ="rowblock">
+							<div class="block1">
+								<label>Username</label>
+							</div>
+							<div class="block2">
+								<input type="text">
+							</div>
+							<!--<div class="block3"></div>-->
+						</div>			
+						<div class ="rowblock">
+							<div class="block1">
+								<label>Password</label>
+							</div>
+							<div class="block2">
+								<input type="password">
+							</div>
+							<div class="block3">
+								<button class="logbutton" type="submit">
+								<span>Login</span></button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+		
+		<main>
+			<!---------------GALLERIA--------------->
+			<div class="gallery">
+				<ul id="kuvalista"class="photolist">
+				
+					<!---- Tänne tulee kuvat javascriptillä---->
+					
+				</ul>
+			</div>
+			
+			<div id="photodisplay" class="modal">
+				<div id="photodisplaycontent" class="modalcont">
+				
+					<img id="closephoto" class="closebutton" src="img/close.png">
+					<figure id="photolarge">
+						<img id="largephoto">
+					
+						<!------Tänne tulee iso kuva------>
+						
+					</figure>
+				</div>				
+			</div>
+			
+		</main>
+	</body>
+	
+	
+	<!--------------*******SCRIPTS********------------------->
+	<!--<script>
+		var closebutton = document.getElementsByClassName("closebutton");
+		function closeDiv () {
+			if (document.getElementsByClassName("modal").style.display == 'block'){
+				document.getElementsByClassName("modal").style.display = 'none';
+			}
+		}
+		closebutton.addEventListener('click', closeDiv);
+	</script>-->
+	
+	
+	<!--This opens uploadscreen-->
+	<script>
+		var uploadbutton = document.querySelector('#upload');
+		var openUpload = function (){
+			if (uploaddiv.style.display == 'block') {
+				uploaddiv.style.display = 'none';
+			}
+			else {
+				uploaddiv.style.display = 'block';
+			}
+		}
+		uploadbutton.addEventListener('click', openUpload);
+		document.querySelector('#closeupload').addEventListener('click', openUpload);
+	</script>
+	
+	<!----This creates the gallery and opens the photodisplay---->
+	<script>
+	
+		function createGallery (){
+			var hearturl = "img/heart.png";
+			var i = 0;
+			var imgurl = "";
+			var imgurls = ["img/cat1.jpg", "img/cat2.jpg", "img/cat3.jpg", "img/cat4.jpg", "img/cat5.jpg", "img/cat6.jpg", "img/cat7.jpg", "img/cat8.jpg", "img/cat9.jpg", "img/cat10.jpg", "img/cat11.jpg", "img/cat12.jpg"];
+			
+			while(i < imgurls.length){
+				imgurl = imgurls[i];
+				var a = document.createElement("LI");//creates <li> element
+				var b = document.createElement("FIGURE"); //creates <figure> element
+				var c = document.createElement("IMG");//creates <img> element
+				var d = document.getElementById("kuvalista"); // connection to <ul>
+				var e = document.createElement("FIGCAPTION"); //creates <figcaption>
+				var f = document.createElement("IMG"); //creates the heart img
+				c.addEventListener('click', openPhoto);
+				c.setAttribute("src", imgurl);
+				f.id = ("heart");
+				f.setAttribute ("src", hearturl);
+				a.appendChild(b);// <li> wraps <figure>
+				b.appendChild(c); // <figure> wraps <img>
+				b.appendChild(e); // <figure> wraps <figcaption>
+				e.appendChild(f); // <figcaption> wraps heart <img>
+				d.appendChild(a); // <ul> wraps <li>
+				//console.log(ids);
+				i++;
+			}
+		}	
+		createGallery();
+		
+		function openPhoto() {
+			if (photodisplay.style.display=='block'){
+				photodisplay.style.display='none';
+			}
+			else {
+				document.querySelector('#largephoto').src = this.src;
+				photodisplay.style.display='block';
+			}
+			document.querySelector('#closephoto').addEventListener('click', openPhoto);
+			
+		}
+	</script>
+		
+	<!--------------Sort By in mobile menu------------->
+	<script>
+		var sortbybutton = document.querySelector('#sortby');
+		var openMenu = function (){
+			if (sortbyoptions.style.display == 'block') {
+					sortbyoptions.style.display = 'none';
+				}
+			else {
+				sortbyoptions.style.display = 'block';
+			}
+		}
+		sortbybutton.addEventListener('click', openMenu);
+	</script>
+
+<!--------This opens the mobile menu and closes it when clicked again or when login is clicked----------->
+	<script>
+		var menuButton = document.querySelector('#mobilemenu');
+		var loginbutton = document.querySelector('#loginbutton1');
+		
+		var openMenu = function (){
+			if (mobilemenucontent.style.display == 'block') {
+				mobilemenucontent.style.display = 'none';
+			}
+			else {
+				mobilemenucontent.style.display = 'block';
+			}
+		}
+		var closeMenu = function(){
+			mobilemenucontent.style.display = 'none';
+		}
+		
+		
+		menuButton.addEventListener('click', openMenu);
+		loginbutton.addEventListener('click', closeMenu);
+				
+	</script>
+
+	<!---------------This opens the login screen--------------------->
+	<script>
+		var button = document.querySelector('#loginbutton');
+		var button1 = document.querySelector('#loginbutton1');
+		var closelogin = document.querySelector('#closelogin');
+		
+		//var login = document.getElementById('logindiv');
+		
+		var openLogin = function () {
+			if (logindiv.style.display =='block'){
+				logindiv.style.display = 'none';
+			}
+			else {
+				logindiv.style.display = 'block';
+			}
+			
+		}
+		button.addEventListener('click', openLogin);
+		button1.addEventListener('click', openLogin);
+		closelogin.addEventListener('click', openLogin);
+		
+		/*window.onclick = function(event) {
+			if (event.target == logindiv) {
+				logindiv.style.display = "none";
+			}
+		}*/
+	</script>		
+</html>
